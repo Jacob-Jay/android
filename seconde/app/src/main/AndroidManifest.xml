@@ -3,7 +3,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.seconde">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
+
+        android:networkSecurityConfig="@xml/net_work_security"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -11,7 +15,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".CheckBOx"></activity>
+        <activity android:name=".ImageView"></activity>
+        <activity android:name=".CheckBOx" />
         <activity android:name=".Radio" />
         <activity android:name=".EditText" />
         <activity android:name=".Button" />
