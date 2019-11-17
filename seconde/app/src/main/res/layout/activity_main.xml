@@ -21,30 +21,42 @@
         android:layout_marginTop="20dp"
         android:background="#FFB8BE"
         android:text="button"
-        android:textColor="#FF487F"/>
+        android:textColor="#FF487F" />
 
     <Button
-        android:layout_marginTop="10dp"
         android:id="@+id/exitText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="editText"/>
+        android:layout_marginTop="10dp"
+        android:text="editText" />
 
-<Button android:id="@+id/radio"
-    android:background="@drawable/button"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:text="radio"/>
-<Button android:id="@+id/checkbox"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_marginTop="20dp"
-    android:text="checkBOx"/>
-    <Button android:id="@+id/imageView"
+    <Button
+        android:id="@+id/radio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:text="radio" />
+
+    <Button
+        android:id="@+id/checkbox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="imageView"/>
+        android:text="checkBOx" />
+
+    <Button
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="imageView" />
+
+    <Button
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="listView" />
 
 
 </LinearLayout>

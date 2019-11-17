@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.seconde.ListView.ListView;
+
 public class MainActivity extends AppCompatActivity {
     private Button submitButton;
     private Button buttonView;
@@ -14,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
     private Button radio;
     private Button checkbox;
     private Button imageView;
+    private Button listView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,6 +47,9 @@ public class MainActivity extends AppCompatActivity {
 
         imageView = findViewById(R.id.imageView);
         setRemove(imageView, ImageView.class);
+
+        listView = findViewById(R.id.listView);
+        setRemove(listView, ListView.class);
     }
 
     private void setRemove(View view ,Class classa) {
