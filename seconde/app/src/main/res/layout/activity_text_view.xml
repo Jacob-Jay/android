@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".textView"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="天哥萨达萨达萨达萨达"
+       android:textColor="#61FF73"
+       android:textSize="50sp"
+       android:textAlignment="center"/>
+
+    <TextView
+        android:layout_marginTop="90dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:textSize="20sp"
+        android:textColor="#201FFF"
+        android:ellipsize="end"
+        android:text="够长，多余的字用。。。显示。。。。。。。。。。。。。。"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="左边"
+        android:layout_marginTop="30dp"
+        android:textSize="20sp"
+        android:drawableEnd="@drawable/left"
+        android:drawablePadding="5dp"
+        />
+
+    <TextView
+        android:id="@+id/middleLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我有中划线"
+        android:textSize="30sp"
+        android:onClick="haveDel"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我有下划线"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/underLine"/>
+
+    <TextView android:id="@+id/runAlways"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我是跑马灯,听说子太少了 我多加点你看含不含"
+        android:textSize="20sp"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:focusable="true"
+        android:focusableInTouchMode="true"/>
+
+</LinearLayout>

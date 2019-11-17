@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Button" android:padding="10dp">
+
+    <Button android:id="@+id/bt1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="butt"/>
+    <Button android:id="@+id/radio" android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bt1"
+        android:background="@drawable/button"
+        android:text="bt2"/>
+    <Button android:id="@+id/changeButton" android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="click chang"
+        android:background="@drawable/click_evetn"
+        android:layout_below="@id/radio"/>
+
+    <Button android:id="@+id/clickThis" android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="clickThis"
+        android:onClick="clickFor"
+        android:layout_below="@id/changeButton"/>
+
+
+    <Button
+        android:id="@+id/byJava" android:layout_marginTop="10dp"
+        android:text="byJava"
+        android:layout_below="@+id/clickThis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+</RelativeLayout>

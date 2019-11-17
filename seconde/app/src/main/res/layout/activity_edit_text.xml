@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    >
+
+    <EditText android:id="@+id/userName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="userName"
+        android:textColor="#FF7539"
+        android:textSize="50dp"
+        android:background="@drawable/input_shape"
+        android:paddingLeft="30dp"
+        android:paddingBottom="5dp"
+        android:drawableLeft="@drawable/left"
+        />
+    <EditText
+        android:id="@+id/password"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/userName"
+        android:hint="passWord"
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_shape"
+        android:paddingLeft="30dp"
+        android:paddingBottom="5dp"
+        android:textSize="50dp"/>
+    <EditText android:id="@+id/telPhone"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_shape"
+        android:hint="telPhone"
+        android:inputType="number"
+        android:paddingLeft="30dp"
+        android:paddingBottom="5dp"
+        android:textSize="50dp"
+        />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/telPhone"
+        android:text="登录"
+        android:textSize="35dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button"/>
+</RelativeLayout>

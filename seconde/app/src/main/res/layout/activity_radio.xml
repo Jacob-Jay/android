@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".Radio">
+<!--    select  默认选中  各个radio需要给id 不然会一直选中， null是@null-->
+    <RadioGroup android:id="@+id/RadioGroup1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+      >
+        <RadioButton android:id="@+id/g1_r1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="男"
+            android:checked="true"
+            android:textSize="30dp"/>
+        <RadioButton android:id="@+id/g1_r2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="女"
+            android:textSize="30dp"/>
+    </RadioGroup>
+    <RadioGroup android:id="@+id/RadioGroup2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/RadioGroup1"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+        <RadioButton android:id="@+id/g2_r1"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:text="男"
+            android:checked="true"
+            android:gravity="center"
+            android:background="@drawable/radio_button"
+            android:button="@null"/>
+        <RadioButton android:id="@+id/g2_r2"
+            android:layout_marginLeft="20dp"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:gravity="center"
+            android:text="女"
+            android:background="@drawable/radio_button"
+            android:button="@null"/>
+    </RadioGroup>
+
+</RelativeLayout>
