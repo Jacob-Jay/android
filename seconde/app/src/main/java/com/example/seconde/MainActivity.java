@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
@@ -17,30 +18,30 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        jump();
+
+
+    }
+
+    private void jump() {
         submitButton = findViewById(R.id.submitButton);
-        submitButton.setOnClickListener((view)->{
-            Intent intent = new Intent(MainActivity.this, textView.class);
-            startActivity(intent);
-//                view.
-        });
+        setRemove(submitButton, textView.class);
+
         buttonView = findViewById(R.id.buttonView);
-        buttonView.setOnClickListener((view)->{
-            Intent intent = new Intent(MainActivity.this, com.example.seconde.Button.class);
-            startActivity(intent);
-        });
+        setRemove(buttonView, com.example.seconde.Button.class);
 
 
         exitText = findViewById(R.id.exitText);
-        exitText.setOnClickListener((view)->{
-            Intent intent = new Intent(MainActivity.this, EditText.class);
-            startActivity(intent);
-        });
+        setRemove(exitText, EditText.class);
+
         radio = findViewById(R.id.radio);
-        radio.setOnClickListener((v -> {
-            Intent intent = new Intent(MainActivity.this, Radio.class);
+        setRemove(radio, Radio.class);
+    }
+
+    private void setRemove(View view ,Class classa) {
+        view.setOnClickListener((v -> {
+            Intent intent = new Intent(MainActivity.this, classa);
             startActivity(intent);
         }));
-
-
     }
 }
