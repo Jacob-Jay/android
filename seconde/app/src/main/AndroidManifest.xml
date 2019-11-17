@@ -11,7 +11,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".Radio"></activity>
+        <activity android:name=".CheckBOx"></activity>
+        <activity android:name=".Radio" />
         <activity android:name=".EditText" />
         <activity android:name=".Button" />
         <activity android:name=".textView" />

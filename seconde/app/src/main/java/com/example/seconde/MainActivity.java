@@ -12,6 +12,7 @@ public class MainActivity extends AppCompatActivity {
     private Button buttonView;
     private Button exitText;
     private Button radio;
+    private Button checkbox;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +37,9 @@ public class MainActivity extends AppCompatActivity {
 
         radio = findViewById(R.id.radio);
         setRemove(radio, Radio.class);
+
+        checkbox = findViewById(R.id.checkbox);
+        setRemove(radio, CheckBOx.class);
     }
 
     private void setRemove(View view ,Class classa) {
