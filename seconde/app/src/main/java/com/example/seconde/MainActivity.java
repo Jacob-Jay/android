@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.example.seconde.ListView.ListView;
+import com.example.seconde.gridActicity.Grade_ac;
 
 public class MainActivity extends AppCompatActivity {
     private Button submitButton;
@@ -17,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
     private Button checkbox;
     private Button imageView;
     private Button listView;
+    private Button gridView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,6 +52,9 @@ public class MainActivity extends AppCompatActivity {
 
         listView = findViewById(R.id.listView);
         setRemove(listView, ListView.class);
+
+        gridView = findViewById(R.id.gridView);
+        setRemove(gridView, Grade_ac.class);
     }
 
     private void setRemove(View view ,Class classa) {

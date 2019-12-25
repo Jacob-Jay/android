@@ -14,7 +14,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".ListView.ListView"></activity>
+        <activity android:name=".gridActicity.Grade_ac"></activity>
+        <activity android:name=".ListView.ListView" />
         <activity android:name=".ImageView" />
         <activity android:name=".CheckBOx" />
         <activity android:name=".Radio" />
